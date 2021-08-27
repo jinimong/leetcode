@@ -17,7 +17,9 @@ class Solution:
         ]
         result = ""
         for letter, val in l:
-            if num >= val:
+            if num == 0:
+                break
+            elif num >= val:
                 count = num // val
                 num -= val * count
                 result += letter * count
