@@ -11,10 +11,7 @@ class Solution:
         cursor = head
         tail = dummy
         
-        while cursor:
-            if cursor.next is None:
-                break  # 다음번 노드가 없으면 멈춤
-                
+        while cursor and cursor.next:
             right = cursor  # 변경 후 오른쪽으로
             left = cursor.next  # 변경 후 왼쪽으로
             
